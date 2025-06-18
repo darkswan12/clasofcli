@@ -1,0 +1,107 @@
+.hero {
+  margin-bottom: 140px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.plugins-desc {
+  text-align: left; 
+  margin: 10px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: var(--text-color);
+  max-width: 1200px;
+  line-height: 1.6;
+}
+
+h3{
+  text-align: center;
+  margin:80px auto 40px auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 180px auto; 
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #000;
+  border-radius: 20px 0 20px 0; /* kiri atas dan kanan bawah membulat */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 220px;
+}
+
+.icon-img {
+  display: block;
+  margin: 0 auto 10px auto;            /* Buat gambar di tengah */
+  width: clamp(30px, 10vw, 60px); /* Ukuran kecil, responsif */
+  max-width: 60px;           
+}
+
+
+.card h3 {
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card p {
+  text-align: center;
+  flex-grow: 1;
+  font-size: 14px;
+  border-top: 1px solid #000;
+  margin: 0 0 20px;
+}
+
+.card a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
+}
+
+/* 🔁 Responsive Layout */
+@media (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .icon-img {
+    width: clamp(40px, 10vw, 60px);
+    max-width: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .icon-img {
+    width: clamp(35px, 12vw, 50px);
+    max-width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .icon-img {
+    width: clamp(30px, 16vw, 45px);
+    max-width: 45px;
+  }
+}
+

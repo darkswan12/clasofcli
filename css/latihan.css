@@ -1,0 +1,165 @@
+section.hero {
+    background: url('../img/hero_latihan.png') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* dari tengah jadi atas */
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 4rem 2rem; /* atas-bawah, kiri-kanan */
+    padding-top: 168px;
+    margin-top: -16px;
+    gap: 1.5rem; /* jarak antar elemen (h1 dan p) */
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.latihan-desc {
+  text-align: center;
+  padding: 0 10px;
+  color: var(--text-color);
+  max-width: 700px;
+  margin: 0px auto 80px auto;
+  line-height: 1.6;
+}
+
+
+.card-container {
+  display: flex;
+  margin: 200px auto;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: none;
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #000;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+}
+.card.easy {
+  background-color: #F1F5F9;   /* Lebih abu muda daripada putih */
+  border-color: #1E2A38;
+  color: #1E2A38;                    /* Teks tetap biru tua */
+}
+
+.card.medium {
+  background-color: #FFF3D0;         /* Kuning pastel */
+  border: 2px solid #EDB427;         /* Warna utama kuning */
+  color: #EDB427;                    /* Judul & ikon selaras */
+}
+
+.card.hard {
+  background-color: #FBE3E3;         /* Merah muda elegan */
+  border: 2px solid #9C2B2E;         /* Merah tua */
+  color: #9C2B2E;                    /* Teks & ikon juga */
+}
+
+.card h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+}
+
+.icon {
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.card .description {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  position: relative;
+  text-align: justify;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #09203b;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a324f;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+/* Media query untuk layar kecil */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column; /* susun vertikal */
+    align-items: center; /* tengahin */
+  }
+
+  .card {
+    margin-bottom: 16px; /* kasih jarak antar card */
+    width: 300px; /* tetap sama */
+  }
+}

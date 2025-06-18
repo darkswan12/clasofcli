@@ -1,0 +1,46 @@
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.metode-desc {
+  text-align: justify; 
+  margin: 10px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: var(--text-color);
+  max-width: 1200px;
+  line-height: 1.6;
+}
+
+.design-methods {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 200px;
+  padding: 20px;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+.method {
+  margin-bottom: 40px;
+}
+
+.method h3 {
+  font-family: 'Plud Jakarta', sans-serif;
+  margin-bottom: 15px;
+}
+
+.method p{
+  text-align: justify;
+}
+
+.method-image {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 40px auto;
+  border-radius: 10px;
+}

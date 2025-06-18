@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Class of Click adalah media belajar UI/UX berbasis website untuk siswa SMK. 
+    Cocok untuk pemula yang ingin memahami dasar-dasar desain antarmuka dan pengalaman pengguna." />
+    <title>Class of Click | Website Belajar UI/UX Dasar</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/prinsip-ui.css" />
+    <!-- Icon -->
+    <link rel="stylesheet" href="../css/bootstrap-icons.css" />
+    <!-- Logo Title (Favicon) -->
+    <link rel="icon" href="../img/logomark-coc-19.png" type="image/png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light py-2">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #EBAC0E; font-weight: 600;"> Materi </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
+
+                            <li><hr class="dropdown-divider"></li>
+                            
+                            <li class="dropdown-header">User Interface</li>
+                            <li><a class="dropdown-item sub-item" href="elemen-ui.html">1) Elemen UI</a></li>
+                            <li><a class="dropdown-item sub-item" href="prinsip-ui.html">2) Prinsip UI</a></li>
+                            <li><a class="dropdown-item sub-item" href="tahapan-ui.html">3) Tahapan Khusus Desain UI</a></li>
+
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li class="dropdown-header">User Experience</li>
+                            <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
+                            <li><a class="dropdown-item sub-item" href="prinsip-ux.html">2) Prinsip UX</a></li>
+                            <li><a class="dropdown-item sub-item" href="contoh.html">3) Metode Populer Desain UX</a></li>
+
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li class="dropdown-header">Figma</li>
+                            <li><a class="dropdown-item sub-item" href="pengantar-figma.html">1) Pengantar Figma</a></li>
+                            <li><a class="dropdown-item sub-item" href="tools-figma.html">2) Tools</a></li>
+                            <li><a class="dropdown-item sub-item" href="plugins.html">3) Plugins</a></li>
+
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="latihan.html">Latihan</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-image">
+            <img src="../img/hero_prinsipui.png" alt="Ilustrasi UI" />
+        </div>
+        <div class="hero-text">
+            <h1>Prinsip <strong style="color: #EBAC0E;">UX</strong></h1>
+            <p class="prinsip-desc">
+                Desainer UI yang hebat bukan hanya bisa membuat tampilan antarmuka yang keren, tetapi juga tahu bagaimana cara membuat pengguna merasa nyaman. Itu semua karena mereka paham prinsip UI.
+                <br><strong style="color: #EBAC0E;">Ayo pelajari prinsip-prinsip UI di bab ini!</strong>
+            </p>
+            <div class="tag-buttons">
+                <div class="tag-row">
+                    <a href="#section1" class="tag">Kesederhanaan</a>
+                    <a href="#section2" class="tag">Keterlihatan</a>
+                    <a href="#section3" class="tag">Konsistensi</a>
+                </div>
+                <div class="tag-row">
+                    <a href="#section4" class="tag">Pemahaman</a>
+                    <a href="#section5" class="tag">Aksesibilitas</a>
+                </div>
+                <div class="tag-row">
+                    <a href="#section6" class="tag">Umpan Balik</a>
+                    <a href="#section7" class="tag">Estetika</a>
+                    <a href="#section8" class="tag">Keberlanjutan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prinsip 1 -->
+    <section class="section" id="section1">
+        <div class="section-content">
+            <h2>Kesederhanaan <span style="color: #EBAC0E;">(Simplicity)</span></h2>
+            <p>Desain antarmuka harus mudah digunakan dan tidak membingungkan. Hindari tampilan yang terlalu ramai atau banyak elemen yang tidak penting.</p>
+            <p>💡<strong>Contoh:</strong> <br>Membagi form ke beberapa langkah kecil membuatnya lebih ringan dan mudah dipahami pengguna.</p>
+        </div>
+        <div class="section-image">
+            <img src="../img/prinsip1(1).png" alt="Ilustrasi Kesederhanaan" />
+        </div>
+    </section>
+
+    <!-- Prinsip 2 -->
+    <section class="section reverse" id="section2">
+        <div class="section-content">
+            <h2>Keterlihatan <span style="color: #EBAC0E;">(Visibility)</span></h2>
+            <p>Elemen penting di layar harus terlihat jelas. Pengguna harus dapat dengan mudah melihat dan memahami apa yang terjadi di layar. Menggunakan kontras warna yang jelas antara elemen utama dan latar belakang, memberikan petunjuk visual yang jelas, dan menyoroti elemen penting adalah beberapa strategi untuk meningkatkan keterlihatan antarmuka.</p>
+            <p>💡<strong>Contoh:</strong> <br>Pada gambar di samping, tombol "Subscribe now" dibuat lebih mencolok agar mudah dilihat dan diklik pengguna.</p>
+        </div>
+        <div class="section-image">
+            <img src="../img/prinsip2.png" alt="Ilustrasi Keterlihatan" />
+        </div>
+    </section>
+
+    <!-- Prinsip 3 -->
+    <section class="section" id="section3">
+        <div class="section-content">
+            <h2>Konsistensi <span style="color: #EBAC0E;">(Consistency)</span></h2>
+            <p>Desain harus menggunakan pola yang sama di semua bagian aplikasi atau website. Ini membuat pengguna tidak bingung saat berpindah halaman. Penggunaan konsistensi dalam tata letak, ikon, simbol, navigasi, dan perilaku interaktif membantu menciptakan pengalaman yang lebih mudah dan familiar.</p>
+            <p>💡<strong>Contoh:</strong> <br>Ikon menggunakan gaya visual yang sama (baik outline atau solid).</p>
+        </div>
+        <div class="section-image">
+            <img src="../img/prinsip3.png" alt="Ilustrasi Konsistensi" />
+        </div>
+    </section>
+
+    <!-- Prinsip 4 -->
+    <section class="section reverse" id="section4">
+        <div class="section-content">
+            <h2>Pemahaman <span style="color: #EBAC0E;">(Understanding)</span></h2>
+            <p>Desain harus mengomunikasikan apa yang dapat dilakukan pengguna, apa yang sedang terjadi, dan apa yang diharapkan dari mereka. Menggunakan label yang deskriptif, petunjuk visual intuitif, dan pesan yang jelas adalah beberapa cara untuk meningkatkan pemahaman pengguna terhadap antarmuka.</p>
+            <p>💡<strong>Contoh:</strong> <br>Gunakan bahasa yang jelas dan langsung agar pengguna mudah memahami situasi dan tahu apa yang harus dilakukan selanjutnya.</p>
+        </div>
+        <div class="section-image">
+            <img src="../img/prinsip4.png" alt="Ilustrasi Pemahaman" />
+        </div>
+    </section>
+
+    <!-- Prinsip 5 -->
+    <section class="section" id="section5">
+        <div class="section-content">
+            <h2>Aksesibilitas <span style="color: #EBAC0E;">(Accessibility)</span></h2>
+            <p>Prinsip aksesibilitas mencakup desain antarmuka yang dapat diakses, termasuk oleh mereka yang memiliki keterbatasan fisik atau sensorik. Menyediakan opsi navigasi alternatif, memastikan kontras warna yang cukup tinggi, memberikan alternatif teks untuk gambar, dan mendukung akses keyboard adalah beberapa aspek penting dalam menciptakan antarmuka agar dapat diakses oleh semua pengguna.</p>
+            <p>💡<strong>Contoh:</strong> <br>Kontras warna yang cukup. Warna teks dan latar belakang harus cukup berbeda, supaya mudah dibaca.</p>
+        </div>
+        <div class="section-image">
+            <img src="../img/prinsip8.png" alt="Ilustrasi Aksesibilitas" />
+        </div>
+    </section>
+
+    <!-- Prinsip 6 -->
+    <section class="section reverse" id="section6">
+        <div class="section-content">
+            <h2>Umpan Balik <span style="color: #EBAC0E;">(Feedback)</span></h2>
+            <p>Prinsip ini tentang bagaimana sistem memberi respons yang jelas saat pengguna melakukan sesuatu, supaya pengguna tahu bahwa aksinya berhasil, sedang diproses, atau gagal.</p>
+            <p>💡<strong>Contoh:</strong> <br>Gambar di samping menunjukkan dua kondisi hasil aksi pengguna — berhasil dan gagal — dengan visual dan teks yang langsung memberitahu pengguna apa yang terjadi setelah mereka melakukan sesuatu.</p>
+        </div>
+        <div class="section-image">
+            <img src="../img/prinsip6.gif" alt="Ilustrasi Umpan Balik" />
+        </div>
+    </section>
+
+    <!-- Prinsip 7 -->
+    <section class="section" id="section7">
+        <div class="section-content">
+            <h2>Estetika <span style="color: #EBAC0E;">(Aesthetics)</span></h2>
+            <p>Prinsip ini fokus pada tampilan antarmuka yang menarik secara visual supaya pengguna betah dan nyaman menggunakannya. Desain yang enak dilihat bisa bikin pengalaman jadi lebih menyenangkan dan profesional, bahkan bisa meningkatkan kepercayaan pengguna terhadap produk.</p>
+            <p>💡<strong>Contoh:</strong> <br>Menerapkan prinsip aesthetics dengan menghadirkan tampilan yang lebih menarik, ekspresif, dan menyenangkan melalui penggunaan emoji dan warna yang memperkuat makna pilihan pengguna.</p>
+        </div>
+        <div class="section-image">
+            <img src="../img/prinsip7.png" alt="Ilustrasi Estetika" />
+        </div>
+    </section>
+
+    <!-- Prinsip 8 -->
+    <section class="section reverse" id="section8">
+        <div class="section-content">
+            <h2>Keberlanjutan <span style="color: #EBAC0E;">(Efficiency)</span></h2>
+            <p>Efisiensi dalam UI berarti desain antarmuka harus membantu pengguna menyelesaikan tugas dengan cepat dan tanpa usaha yang berlebihan. Tujuannya: hemat waktu dan tenaga pengguna, terutama untuk tugas yang sering dilakukan.</p>
+            <p>💡<strong>Contoh:</strong> <br>Autofill / Auto-suggestion. Gambar ini menunjukkan prinsip keberlanjutan, di mana kode verifikasi bisa terisi otomatis (autofill) atau tidak perlu mengetik ulang sehingga memudahkan dan mempercepat proses input.</p>
+        </div>
+        <div class="section-image">
+            <img src="../img/prinsip5.png" alt="Ilustrasi Keberlanjutan" />
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Class of Click. All rights reserved.</p>
+    </footer>
+
+    <!-- Tombol Kembali ke Atas -->
+    <button id="toTopBtn" title="Kembali ke atas">
+        <i class="bi bi-chevron-double-up"></i>
+    </button>
+
+    <script>
+        const toTopBtn = document.getElementById("toTopBtn");
+
+        window.addEventListener('scroll', () => {
+            if (document.documentElement.scrollTop > 100) {
+                toTopBtn.classList.add('show');
+            } else {
+                toTopBtn.classList.remove('show');
+            }
+        });
+
+        toTopBtn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+
+    <!-- JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

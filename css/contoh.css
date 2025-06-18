@@ -1,0 +1,117 @@
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.studikasus-desc {
+  text-align: center;
+  padding: 0 10px;
+  color: var(--text-color);
+  max-width: 1200px;
+  margin: 10px auto 80px auto;
+  line-height: 1.6;
+}
+
+/* Case-Grid Section */
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.case-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+}
+
+.case-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.case-card h2 {
+  font-size: 20px;
+  margin: 1rem;
+  text-decoration: none;
+  color: #EBAC0E;
+  font-weight: bold;
+}
+
+
+.case-card .read-more {
+  text-decoration:underline;
+  color: #1A3E66;
+}
+
+.case-card .author,
+.case-card .excerpt {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.read-more {
+  display: inline-block;
+  margin: 0 1rem 1.5rem;
+  color: #0077cc;
+  font-weight: bold;
+  color: #0077cc;       /* Warna link */
+  text-decoration: underline; /* Bikin underline */
+  font-weight: bold;    /* Kalau mau lebih menonjol */
+  cursor: pointer;      /* Biar kursor berubah saat hover */
+  transition: color 0.3s;
+}
+
+.read-more:hover {
+  color: #1a324f;       /* Warna saat hover */
+  text-decoration: underline; /* Tetap underline */
+}
+
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 60px auto;
+  max-width: 1200px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ea5937;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #c94a31;
+}
+
+@media (max-width: 768px) {
+  .studikasus-desc{
+    text-align: justify;
+    padding: 0 20px;
+  }
+  .case-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+}

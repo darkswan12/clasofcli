@@ -1,0 +1,153 @@
+.prinsip-desc {
+  color: var(--text-color);
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  color: var(--text-color);
+  flex-wrap: wrap;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  margin: 150px auto 40px auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.hero-image,
+.hero-text {
+  flex: 1;
+  padding: 10px;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 40px;
+}
+
+
+.hero-text p {
+  margin: 20px 0;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ffbf00;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Tag Button Container */
+.tag-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+/* Baris Tombol */
+.tag-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+}
+
+/* Tombol Individual */
+.tag {
+  width: 200px;
+  text-align: center;
+  background-color: #ffbf00;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+  background-color: darkorange;
+}
+
+/* Content Sections */
+.section-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.section-content h2 {
+  margin-bottom: 20px;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+  background-color: #f9f9f9;
+}
+
+.section-image {
+  flex: 1;
+  padding: 20px;
+  text-align: right;
+}
+
+.section-image img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 60px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero,
+  .section,
+  .section.reverse {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 50px auto;
+  }
+
+  .hero-text,
+  .hero-image,
+  .section-content,
+  .section-image {
+    padding: 10px;
+  }
+
+  .hero-image img,
+  .section-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .tag {
+    max-width: 140px;
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}

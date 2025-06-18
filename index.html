@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Class of Click adalah media belajar UI/UX berbasis website untuk siswa SMK. 
+    Cocok untuk pemula yang ingin memahami dasar-dasar desain antarmuka dan pengalaman pengguna." />
+    <title>Class of Click | Website Belajar UI/UX Dasar</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <!-- Icon -->
+    <link rel="stylesheet" href="../css/bootstrap-icons.css" />
+    <!-- Logo Title (Favicon) -->
+    <link rel="icon" href="../img/logomark-coc-19.png" type="image/png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light py-2">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: #EBAC0E; font-weight: 600;">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Materi </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pages/pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
+
+                            <li><hr class="dropdown-divider"></li>
+                            
+                            <li class="dropdown-header">User Interface</li>
+                            <li><a class="dropdown-item sub-item" href="pages/elemen-ui.html">1) Elemen UI</a></li>
+                            <li><a class="dropdown-item sub-item" href="pages/prinsip-ui.html">2) Prinsip UI</a></li>
+                            <li><a class="dropdown-item sub-item" href="pages/tahapan-ui.html">3) Tahapan Khusus Desain UI</a></li>
+
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li class="dropdown-header">User Experience</li>
+                            <li><a class="dropdown-item sub-item" href="pages/elemen-ux.html">1) Elemen UX</a></li>
+                            <li><a class="dropdown-item sub-item" href="pages/prinsip-ux.html">2) Prinsip UX</a></li>
+                            <li><a class="dropdown-item sub-item" href="pages/metode-populer.html">3) Metode Populer Desain UX</a></li>
+
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li class="dropdown-header">Figma</li>
+                            <li><a class="dropdown-item sub-item" href="pages/pengantar-figma.html">1) Pengantar Figma</a></li>
+                            <li><a class="dropdown-item sub-item" href="pages/tools-figma.html">2) Tools</a></li>
+                            <li><a class="dropdown-item sub-item" href="pages/plugins.html">3) Plugins</a></li>
+
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li><a class="dropdown-item" href="pages/contoh.html">Contoh Studi Kasus</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="pages/video.html">Video</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="pages/latihan.html">Latihan</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="pages/tentang.html">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-yellow">
+        <div class="hero-container">
+            <div class="hero-text">
+            <h5><b>Selamat datang di</b></h5>
+            <h1>CLASS OF CLICK (CoC)</h1>
+            <p>Bingung mulai dari mana untuk mempelajari desain UI/UX ? <br>
+             Class of Click hadir sebagai solusi ! <br>
+             Kamu dapat mempelajari fundamental desain UI/UX secara mandiri dengan cara yang santai dan fleksibel. <br>
+            </p>
+            <a href="./pages/pengenalan-ui-ux.html" class="cta">Mulai Belajar</a>
+            </div>
+            <div class="hero-image">
+            <img src="./img/fitur_materi.png" alt="Champion children image" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Tentang 
+    <section class="tentang" id="tentang">
+        <div class="container">
+        <h2 class="text-center pb-5" style="font-weight: 300;">
+            <span style="color: #f1f1f1;">Apa itu</span> LEALO<span style="color: #1f1f1f;">?</span>
+        </h2>
+
+        <div class="row">
+            <!-- Gambar 
+            <div class="col-lg-7 pb-5 pb-lg-8">
+            <img class="img-fluid" src="img/tentang.svg" alt="Gambar Tentang Lealo">
+            </div>
+
+            <!-- Deskripsi 
+            <div class="col-lg-5 my-auto">
+            <h5 class="mb-4" style="font-weight: 500;">
+                Lealo merupakan website penyedia bahan belajar mengenal teori logo sebagai identitas sebuah brand. Lealo hadir sebagai media yang memudahkan dalam mengetahui dan mempelajari sebuah logo.
+            </h5>
+            <a href="tentang.html" class="btn px-md-5 button-lg-primary" style="font-weight: 300;">
+                Selengkapnya <i class="bi bi-chevron-right ps-3"></i>
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>-->
+
+
+
+    <!-- About -->
+   <section class="about-section">
+        <div class="about-text">
+            <h2>Tentang <span class="highlight">CoC</span></h2>
+            <p>
+            <strong>Class of Click (CoC)</strong>, media pembelajaran desain UI/UX yang didedikasikan untuk siswa SMK jurusan DKV.<br> 
+            Melalui CoC, memungkinkan kamu mengenal fundamental desain UI/UX dengan proses belajar yang fleksibel dan santai.<br> 
+            Persiapkan diri kamu untuk karir di industri kreatif dengan proses belajar yang santai dan menyenangkan hanya di CoC!
+            </p>
+        </div>
+   </section>
+
+
+    <!-- Features -->
+    <section class="features-section">
+        <h2 class="features-heading">
+            Fitur <span class="highlight">CoC</span>
+        </h2>
+        
+        <div class="features-container">
+            <section class="features">
+            <div class="feature-card">
+                <a href="./pages/pengenalan-ui-ux.html">
+                <img class="feature-icon" src="./img/fitur_materi.png" alt="Icon" />
+                <h4>Materi</h4>
+                <p>
+                Di menu Materi, kamu bisa mempelajari dasar-dasar UI/UX, mulai dari pengenalan UI/UX, pengenalan aplikasi Figma sampai dengan contoh studi kasus. 
+                Materi disajikan secara menarik dan interaktif agar belajar terasa lebih seru!
+                </p>
+                </a>
+            </div>
+            <div class="feature-card">
+                <a href="./pages/video.html">
+                <img class="feature-icon" src="./img/fitur_vid.png" alt="Icon" />
+                <h4>Video</h4>
+                <p>
+                Di menu Video, kamu bisa menonton kumpulan video pilihan seputar UI/UX yang diambil dari berbagai channel YouTube. 
+                Cocok buat kamu yang lebih suka belajar melalui visual dan penjelasan langsung dari para praktisi di bidang ini.
+                </p>
+                </a>
+            </div>
+            <div class="feature-card">
+                <a href="./pages/latihan.html">
+                <img class="feature-icon" src="./img/fitur_lat.png" alt="Icon" />
+                <h4>Latihan</h4>
+                <p>
+                Menu Latihan berisi berbagai tantangan seru untuk menguji pemahaman kamu. Ada tiga level: Mudah, Menengah, dan Sulit. 
+                Latihan disusun untuk membantu kamu belajar UI/UX secara bertahap.
+                </p>
+                </a>
+            </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Kata-kata -->
+    <section class="testimonial-section">
+        <h5 class="section-subtitle">Wawasan Ahli</h5>
+        <h2 class="section-title">Apa Kata Ahli</h2>
+        <div class="testimonial-content">
+            <span class="quote-mark">“</span>
+            <p class="testimonial-text">
+            It's not about technology. It's about people. <br>— Don Norman
+            </p>
+            <p class="testimonial-explanation">
+            Ini berarti bahwa:<br>
+            Desain yang baik bukan ditentukan oleh teknologi,<br>
+            tetapi oleh seberapa besar perhatian kita terhadap kebutuhan dan perilaku pengguna.
+            </p>
+            <div class="author-info">
+            <img src="./img/Don-Norman.jpg" alt="Don Norman" class="author-photo">
+            <div class="author-details">
+                <h4 class="author-name">Don Norman</h4>
+                <p class="author-role">Penulis of “The Design of Everyday Things”</p>
+            </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <p>Yuk mulai jelajahi serunya dunia desain UI/UX sekarang!</p>
+        <a href="./pages/pengenalan-ui-ux.html">Mulai Sekarang</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Class of Click. All rights reserved.</p>
+    </footer>
+
+    <!-- Tombol Kembali ke Atas -->
+    <button id="toTopBtn" title="Kembali ke atas">
+        <i class="bi bi-chevron-double-up"></i>
+    </button>
+
+    <script>
+        const toTopBtn = document.getElementById("toTopBtn");
+
+        window.addEventListener('scroll', () => {
+            if (document.documentElement.scrollTop > 100) {
+                toTopBtn.classList.add('show');
+            } else {
+                toTopBtn.classList.remove('show');
+            }
+        });
+
+        toTopBtn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/elemen-ux.js"></script>
+</body>
+</html>
